@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div id="logo">
+                <img src="./images/book-open-variant.svg" alt="book icon">
+                <p id="logo-text">Bookfiy</p>
+            </div>
+            <div > <button id="show" id="add-button"><p></p><img src="./images/plus.svg" alt="plus icon"></button></div>
+            <div id="get-started-text"><p>Get Started</p></div>
+        </header>
+        
+        <div id="library">
+            
+               
+        </div>
+
+        
+
+
+
+    </div>
+    <dialog id="dialog">
+        <form method="dialog">
+           <div id="first-section">
+                <p>Add Book</p>
+                <button id="close-dialog"><img src="./images/close-circle.svg" alt="x icon"></button>
+           </div>
+           <div id="second-section">
+                <input id="title" type="text" required placeholder="Title">
+                <input id="author" type="text" required placeholder="Author">
+                <input id="pages-number" type="number" required >
+                <div class="checkbox-wrapper">
+                    <input checked="" type="checkbox" class="check" id="check1-61">
+                    <label for="check1-61" class="label">
+                      <svg width="45" height="45" viewBox="0 0 95 95">
+                        <rect x="30" y="20" width="50" height="50" stroke="black" fill="none"></rect>
+                        <g transform="translate(0,-952.36222)">
+                          <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1"></path>
+                        </g>
+                      </svg>
+                      <span>Have u read the book</span>
+                    </label>
+                  </div>
+
+           </div>
+            <button id="add-button" type="submit">Add book</button>
+        </form>
+      </dialog>
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
