@@ -374,3 +374,7 @@ input{
   }
   
  
+  #add-button:hover, #show:hover,#close-dialog:hover{
+    cursor: pointer;
+    
+  }
