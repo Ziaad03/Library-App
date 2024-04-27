@@ -12,15 +12,17 @@ let titleInput = document.getElementById("title")
 let authorInput = document.getElementById("author")
 let pagesInput = document.getElementById("pages-number")
 
-// book constructor
-function book(author,title,pages,read ){
-    this.author = author;
-    this.title = title;
-    this.pages = pages;
-    this.read = read;
-    
-    
 
+
+
+// book class
+class book{
+    constructor(author,title,pages,read ){
+        this.author = author;
+        this.title = title;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(author, title, noOfPages, read ){
@@ -71,6 +73,7 @@ showBtn.addEventListener('click', () => {
 
 })
 
+// close the add menu
 closeBtn.addEventListener('click', ()=>{
     event.preventDefault();
     dialog.close()
